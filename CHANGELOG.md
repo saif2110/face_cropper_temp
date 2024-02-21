@@ -11,3 +11,7 @@
 ## 0.0.3
 
 * Update pubspec
+
+## 0.0.4
+
+* Update readme and example gif
