@@ -1,7 +1,7 @@
 name: face_cropper
 description: A new Flutter package project.
 version: 0.0.1
-homepage: null
+repository: https://github.com/sagarRawatUK/face_cropper
 
 environment:
   sdk: '>=2.19.6 <3.0.0'
