@@ -5,7 +5,7 @@ A flutter package that detects face in an image and gives cropped image of face.
 
 ## Preview
 
-![face_cropper_2024-02-21-ezgif com-video-to-gif-converter](https://github.com/sagarRawatUK/face_cropper/assets/60035156/db224ac6-30a2-43db-8766-dcfd503935d6)
+![face_cropper_2024-02-21](https://github.com/sagarRawatUK/face_cropper/assets/60035156/af253c6f-3ec8-44e4-bb12-44f2116bf23a)
 
 ## Installation
 
