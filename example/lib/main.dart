@@ -50,6 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
           _imagePath = pickedImagePath.path;
         });
       } else {
+        // ignore: use_build_context_synchronously
         ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
           content: Text(
             "No Image selected",

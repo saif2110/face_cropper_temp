@@ -5,7 +5,7 @@ A flutter package that detects face in an image and gives cropped image of face.
 
 ## Preview
 
-https://github.com/sagarRawatUK/face_cropper/assets/60035156/baef2481-831f-4f40-b930-056483dd6307
+<https://github.com/sagarRawatUK/face_cropper/assets/60035156/baef2481-831f-4f40-b930-056483dd6307>
 
 ## Installation
 
