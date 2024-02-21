@@ -22,3 +22,8 @@ dev_dependencies:
     sdk: flutter
 
 flutter: null
+
+# This package supports all platforms listed below.
+platforms:
+  android:
+  ios:
