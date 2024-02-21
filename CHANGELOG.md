@@ -7,3 +7,7 @@
 ## 0.0.2
 
 * Update pubspec and readme file
+
+## 0.0.3
+
+* Update pubspec

@@ -1,6 +1,6 @@
 name: face_cropper
 description: A flutter package that detects face in an image and gives cropped image of face.
-version: 0.0.2
+version: 0.0.3
 repository: https://github.com/sagarRawatUK/face_cropper
 
 environment:
