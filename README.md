@@ -1,27 +1,68 @@
-face_cropper
 
-A Flutter camera plugin that detects face in real-time.
+# Face Cropper
 
-## Features
+A flutter package that detects face in an image and gives cropped image of face.
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+## Preview
 
-## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+## Installation
+
+First, add face_cropper as a dependency in your pubspec.yaml file.
+
+```dart
+face_cropper: ^<latest-version>
+```
+
+## iOS
+
+• Minimum iOS Deployment Target: 13.0
+
+Add a row to the ios/Runner/Info.plist:
+
+• Add ```Privacy - Photo Library Usage Description``` and a usage description.
+
+• If editing Info.plist as text, add:
+
+```dart
+<key>NSPhotoLibraryUsageDescription</key>
+<string>your usage description here</string>
+```
+
+## Android
+
+• Change the minimum Android sdk version to 21 (or higher) in your ```android/app/build.gradle``` file.
+
+```dart
+minSdkVersion 21
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+• Add the import of the dependency
 
 ```dart
-const like = 'sample';
+import 'package:face_cropper/face_cropper.dart';
 ```
 
-## Additional information
+• Create an instance of the ```FaceCropper``` class
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+FaceCropper faceCropper = FaceCropper();
+```
+
+• Use the async ```detectFacesAndCrop``` method to get a cropped image path
+
+```dart
+await faceCropper.detectFacesAndCrop(<path_to_image>);
+```
+
+• It returns a path of the cropped image
+
+## Contributions
+
+Contributions of any kind are more than welcome! Feel free to fork and improve face_cropper in any way you want, make a pull request, or open an issue.
+
+## Support the Library
+
+You can support the library by liking it on pub, staring in on Github and reporting any bugs you encounter

@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'dart:io';
 
 import 'package:face_cropper/face_cropper.dart';
@@ -40,20 +41,25 @@ class _MyHomePageState extends State<MyHomePage> {
   FaceCropper faceCropper = FaceCropper();
 
   void _pickImage() async {
-    final pickedImagePath =
-        await ImagePicker().pickImage(source: ImageSource.gallery);
+    try {
+      final pickedImagePath =
+          await ImagePicker().pickImage(source: ImageSource.gallery);
 
-    if (pickedImagePath != null) {
-      setState(() {
-        _imagePath = pickedImagePath.path;
-      });
-    } else {
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-        content: Text(
-          "No Image selected",
-          style: TextStyle(color: Colors.white),
-        ),
-      ));
+      if (pickedImagePath != null) {
+        setState(() {
+          _imagePath = pickedImagePath.path;
+        });
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+          content: Text(
+            "No Image selected",
+            style: TextStyle(color: Colors.white),
+          ),
+        ));
+      }
+    } catch (error, stackTrace) {
+      log(error.toString());
+      log(stackTrace.toString());
     }
   }
 
